@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'RxCoreLocation'
- s.version = '1.3.1'
+ s.version = '1.4.0'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'RxCoreLocation abstract the Rx behavior for Core Location'
  s.homepage = 'http://github.com/RxSwiftCommunity/RxCoreLocation'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
  s.source = { :git => "https://github.com/RxSwiftCommunity/RxCoreLocation.git", :tag => s.version.to_s }
  s.ios.deployment_target = '9.0'
  s.osx.deployment_target = '10.10'
- s.watchos.deployment_target = '2.0'
+ s.watchos.deployment_target = '3.0'
  s.tvos.deployment_target = '9.0'
  s.requires_arc = true
 
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
  s.subspec "Core" do |ss|
      ss.source_files  = "Sources/*.swift"
      ss.framework  = "Foundation"
-     ss.dependency "RxSwift", "~> 4.4.0"
-     ss.dependency "RxCocoa", "~> 4.4.0"
+     ss.dependency "RxSwift", "~> 5.0"
+     ss.dependency "RxCocoa", "~> 5.0"
  end
 
 end
